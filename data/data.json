@@ -1,0 +1,68 @@
+[
+    {
+        "id": "0",
+        "countryName": "Japan",
+        "image": "Japan.jpg",
+        "placesVisited": "Tokyo, Kyoto, Osaka",
+        "suggestedDuration": "14 days",
+        "rating": "8/10",
+        "placesToStay": "airbnb and hostel",
+        "price": "2000",
+        "description": "Japan is a place where planning is needed. Tokyo is good for food and shopping but there are a lot of people. The stations are big and have multiple rails. Kyoto is really good for scenic views and historical places. Osaka is the spot for young people with so many bars in the same area and hibachi." 
+    }, 
+    {
+        "id": "1",
+        "countryName": "Thailand",
+        "image": "Thailand.jpg",
+        "placesVisited": "Ko Phi Phi, Ko Lanta, Krabi, Bangkok",
+        "suggestedDuration": "10 days",
+        "rating": "9/10",
+        "placesToStay": "hotel and resorts",
+        "price": "1500",
+        "description": "Bangkok is good for visiting temples and architecture. If you are going to Thailand for islands and beaches then don't stay too long in Bangkok. Krabi is less commercialized than Phuket"
+    },
+    {
+        "id": "2",
+        "countryName": "Spain",
+        "image": "Spain.jpg",
+        "placesVisited": "Barcellona, Madrid, Granada, Mallorca",
+        "suggestedDuration": "14 days",
+        "rating": "8/10",
+        "placesToStay": "airbnb, hostel",
+        "price": "2000",
+        "description": "Spain has a lot to offer with different regions have different things. Barcellona has lots to offer with food and architecture while Madrid is a party city (NYC of Spain). Mallorca is like Ibiza but cheaper and less of a party place. Southern of Spain is more chill and have a lot of great scenic places"
+    }, 
+    {
+        "id": "3",
+        "countryName": "Iceland",
+        "image": "Iceland.jpg",
+        "placesVisited": "Pingvellir, Gullfoss, Blue Lagoon, ",
+        "suggestedDuration": "8 days",
+        "rating": "9/10",
+        "placesToStay": "cottages, hostel, airbnb",
+        "price": "1300",
+        "description": "This place is perfect for nature lovers. The drive around the country itself is already worth it. Good suggestion would be to go with a group and have drivers to switch with. There are so many waterfalls, some are tall and some are wide. Northern light is a hit or miss. It really depends on the weather and luck. If you are on budget, getting food from the grocery stores is the move. BLue Lagoon is good but there are other lagoons that are cheaper and just as nice."
+    },
+    {
+        "id": "4",
+        "countryName": "Dominican Republic",
+        "image": "DR.jpg",
+        "placesVisited": "Occidental Punta Cana Resort",
+        "suggestedDuration": "5 days",
+        "rating": "8/10",
+        "placesToStay": "All-inclusive resort",
+        "price": "1000",
+        "description": "This is the place you go to relax, chill, and get away from work. Most resorts have all-inclusive deals with flight ticket included, and this is more worth it that way. It's recommended that tourists should stay in the resort because it's not that safe outside of the resort."
+    },
+    {
+        "id": "5",
+        "countryName": "Italy",
+        "image": "Italy.jpg",
+        "placesVisited": "Rome, Florence, Naples",
+        "suggestedDuration": "15 days",
+        "rating": "8/10",
+        "placesToStay": "airbnb and hostels",
+        "price": "1400",
+        "description": "Rome is crowded but has really good historical buildings and architecture such as Roman Forum and Colloseum. Florence is more peaceful and yet is still full of architecture. Pasta here is really good. Naples is where pizza was born. Definitely need to get a pie of margarita!"
+    }
+]

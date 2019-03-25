@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Nunito+Sans" rel="stylesheet">
+
+
+    <title>{%COUNTRYNAME%} /// Follow Me</title>
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 57.5%;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 6rem 4rem 10rem;
+            line-height: 1.7;
+            font-family: "Nunito Sans", sans-serif;
+            color: #555;
+            min-height: 100vh;
+            background: linear-gradient(to bottom right, #F5E3E6, #D9E4F5);
+        }
+
+        h1 {
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 300;
+            font-size: 5rem;
+            color: white;
+            transform: skewY(-5deg);
+            margin-bottom: 3rem;
+            text-align: center;
+            top: 50%;
+            /* position: relative; */
+            word-spacing: 4px;
+        }
+
+        h1::before {
+            content: '';
+            display: block;
+            height: 65%;
+            width: 58%;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            background: linear-gradient(to bottom, #B58ECC, #5DE6DE
+);
+            opacity: .8;
+            z-index: -1;
+            transform: skewY(363.2deg) translate(-50%, -50%);
+        }
+
+
+        .container {
+            width: 100rem;
+            margin: 0 auto;
+        }
+
+        .country {
+            width: 80rem;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 3rem 6rem 1rem rgba(0, 0, 0, 0.25);
+            position: relative;
+        }
+
+        .country__hero {
+            position: relative;
+        }
+
+        .country__hero::before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(to right bottom, #67b26f, #4ca2cd);
+            opacity: .4;
+        }
+
+        .country__img {
+            width: 100%;
+            height: 300px ;
+            display: block;
+        }
+
+        .country__price {
+            position: absolute;
+            top: -3rem;
+            right: -3rem;
+            z-index: 100;
+            background: linear-gradient(to right bottom,  #B58ECC, #5DE6DE);
+            height: 14rem;
+            width: 14rem;
+            border: 6px solid white;
+            border-radius: 50%;
+            transform: rotate(15deg);
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+            color: white;
+            font-size: 3rem;
+            font-family: "Bungee Inline", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .country__back:link,
+        .country__back:visited {
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
+            font-size: 1.5rem;
+            color: white;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            z-index: 1;
+            border: 2px solid white;
+            border-radius: 100rem;
+            padding: 0 2rem;
+            transition: all .3s;
+            display: flex;
+            align-items: center;
+        }
+
+        .country__back:hover,
+        .country__back:active {
+            background-color: white;
+            color: #555;
+        }
+
+        .country__name {
+            background: linear-gradient(to right, #B58ECC, #5DE6DE);
+            padding: 1rem 1rem;
+            font-family: "Bungee Inline", sans-serif;
+            font-weight: 400;
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            word-spacing: 2px;
+        }
+
+        .country__details {
+            background-color: #eee;
+            padding: 2rem 10rem;
+            font-size: 1.5rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.75rem;
+        }
+
+        .country__description {
+            padding: 4rem 8rem;
+            font-size: 1.6rem;
+            line-height: 1.8;
+        }
+
+        .country__link:link,
+        .country__link:visited {
+            display: block;
+            background-color: #5aaa9d;
+            color: white;
+            font-size: 1.6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 1.5rem;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all .3s;
+        }
+
+        .country__link:hover,
+        .laptop__link:active {
+            background-color: #67b26f;
+        }
+
+        .country__source {
+            padding: 0 6rem 3rem;
+            color: #999;
+            font-size: 1.2rem;
+        }
+
+        .country__source a:link,
+        .country__source a:visited {
+            color: #999;
+        }
+
+        .country__source a:hover,
+        .country__source a:active {
+            color: #555;
+        }
+
+        .emoji-left {
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        .emoji-right {
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Follow me!</h1>
+        <figure class="country">
+            <p class="country__price"> ${%PRICE%}</p>
+            <a href="/favoritecountries" class="country__back"><span class="emoji-left">👈</span>Back</a>
+            <div class="country__hero">
+                <img src="/{%IMAGE%}" alt="{%COUNTRYNAME%}" class="country__img">
+            </div>
+            <h2 class="country__name">{%COUNTRYNAME%}</h2>
+            <div class="country__details">
+                <p><b>Visited Places:</b> {%PLACESVISITED%}</p>
+                <p><b>Suggested Duration:</b> {%SUGGESTEDDURATION%}</p>
+                <p><b>Suggested Accomodation:</b> {%PLACESTOSTAY%}</p>
+                <p><b>Overall Rating:</b> {%RATING%}</p>
+            </div>
+            <p class="country__description">{%COUNTRYDESCRIPTION%}</p>
+        </figure>
+    </div>
+</body>
+
+</html>
